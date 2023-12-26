@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body class="">
+    <header>
+      <div><a href="">SNAP</a></div>
+      <div class="hamburger"></div>
+      <nav class="menu">
+        <ul class="">
+          <li class="drop-down-menu-container">
+            <span>Features</span
+            ><img
+              class="arrow-icon"
+              src="./images/icon-arrow-down.svg"
+              alt=""
+            />
+            <ul class="drop-down-menu hidden">
+              <li><a href="">Todo List</a></li>
+              <li><a href="">Calendar</a></li>
+              <li><a href="">Reminder</a></li>
+              <li><a href="">Planning</a></li>
+            </ul>
+          </li>
+          <li class="drop-down-menu-container">
+            <span>Company</span
+            ><img
+              class="arrow-icon"
+              src="./images/icon-arrow-down.svg"
+              alt=""
+            />
+            <ul class="drop-down-menu hidden">
+              <li><a href="">History</a></li>
+              <li><a href="">Our Team</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Login</a></li>
+          <li><a class="register-link" href="">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="grid-container">
+        <picture>
+          <source
+            media="(max-width:1080px)"
+            srcset="./images/image-hero-mobile.png"
+          />
+          <img src="./images/image-hero-desktop.png" alt="hero image" />
+        </picture>
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button>Learn more</button>
+
+        <div class="clients">
+          <img src="./images/client-databiz.svg" alt="databiz logo" />
+          <img src="./images/client-audiophile.svg" alt="audiophile" />
+          <img src="./images/client-meet.svg" alt="meet" />
+          <img src="./images/client-maker.svg" alt="maker" />
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
